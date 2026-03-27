@@ -5,30 +5,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dégustation Vins Valais | Le Portail de tout le Canton</title>
     <style>
-        body, html { height: 100%; margin: 0; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+        body, html { height: 100%; margin: 0; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; overflow: hidden; }
         
-        /* Image de fond : Vignes du Valais */
+        /* Utilisation de TON image chargée sur GitHub */
         .bg-image {
-            background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), 
-            url('https://images.unsplash.com/photo-1504275107627-0c2ba7a43dba?q=80&w=1920&auto=format&fit=crop');
+            background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+            url('vignes-valais.jpg');
             height: 100%; background-position: center; background-repeat: no-repeat; background-size: cover;
             display: flex; align-items: center; justify-content: center;
         }
 
-        .content { color: white; text-align: center; padding: 20px; max-width: 900px; }
+        .content { color: white; text-align: center; padding: 20px; max-width: 900px; z-index: 1; }
         
-        h1 { font-size: 3.5em; margin-bottom: 10px; text-transform: uppercase; letter-spacing: 2px; }
+        h1 { font-size: 3.5em; margin-bottom: 10px; text-transform: uppercase; letter-spacing: 2px; text-shadow: 2px 2px 10px rgba(0,0,0,0.5); }
         h1 span { color: #e63946; }
         
-        .subtitle { font-size: 1.5em; margin-bottom: 30px; font-weight: 300; }
+        .subtitle { font-size: 1.5em; margin-bottom: 30px; font-weight: 300; text-shadow: 1px 1px 5px rgba(0,0,0,0.5); }
         
-        .grid-valais { display: flex; justify-content: space-around; margin-bottom: 40px; font-size: 0.9em; color: #ddd; text-transform: uppercase; }
+        .grid-valais { display: flex; justify-content: space-around; margin-bottom: 40px; font-size: 0.9em; color: #eee; text-transform: uppercase; font-weight: bold; }
         
         .btn-main { background-color: #e63946; color: white; padding: 18px 40px; text-decoration: none; 
-                    border-radius: 50px; font-weight: bold; font-size: 1.1em; transition: 0.3s; border: 2px solid transparent; }
-        .btn-main:hover { background-color: transparent; border-color: white; }
+                    border-radius: 50px; font-weight: bold; font-size: 1.1em; transition: 0.3s; border: 2px solid transparent; box-shadow: 0 4px 15px rgba(0,0,0,0.3); }
+        .btn-main:hover { background-color: white; color: #e63946; transform: scale(1.05); }
 
-        .footer { position: absolute; bottom: 20px; width: 100%; text-align: center; color: rgba(255,255,255,0.5); font-size: 0.8em; }
+        .footer { position: absolute; bottom: 20px; width: 100%; text-align: center; color: rgba(255,255,255,0.7); font-size: 0.8em; }
     </style>
 </head>
 <body>
